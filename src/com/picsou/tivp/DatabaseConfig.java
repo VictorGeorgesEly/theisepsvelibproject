@@ -9,16 +9,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
-
-
-
 public class DatabaseConfig {
     public static final String DB_DRIVER = "com.mysql.jdbc.Driver";
     public static final String DB_ADDRESS = "jdbc:mysql://localhost:3306/theisepsvelibproject?useSSL=false";
     public static final int DB_PORT = 3306;
     public static final String DB_USER = "root";
-    public static final String DB_PASSWD = "root";
+    public static final String DB_PASSWD = "";
 
     public Connection getConnection()  {
         try {
@@ -34,7 +30,6 @@ public class DatabaseConfig {
             return null;
         }*/
     }
-
 
     public ResultSet fetch(String request) {
         Connection connection = getConnection();

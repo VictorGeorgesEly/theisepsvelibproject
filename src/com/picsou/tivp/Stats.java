@@ -5,6 +5,7 @@ import org.lwjgl.opengl.GREMEDYFrameTerminator;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
@@ -57,12 +58,16 @@ public class Stats {
         highs = new ArrayList<>();
         fulls = new ArrayList<>();
 
+        File outputs = new File("outputs/");
+        if (!outputs.exists()) {
+            outputs.mkdir();
+        }
+
 
         long currentTimestamp = new Date().getTime();
         try {
             printWriter = new PrintWriter("outputs/outputs_" + currentTimestamp + "_" + Main.userRatio + ".csv");
             printWriter.println("currentTimestamp" + "," + "moving" + "," + "storage" + "," + "onStation" + "," + "problemStation" + "," + "goodStation" + "," + "empty" + "," + "low" + "," + "good" + "," + "high" + "," + "full");
-            printWriter.flush();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

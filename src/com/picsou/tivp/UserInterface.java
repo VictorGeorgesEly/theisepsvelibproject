@@ -14,7 +14,7 @@ import java.util.*;
 public class UserInterface extends BasicGame {
 
     public static int WIDTH = 1400;
-    public static int HEIGHT = 1000;
+    public static int HEIGHT = 950;
 
     public static float xDisplacement = 140.0f;
     public static float yDisplacement = -125.f;
