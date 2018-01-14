@@ -78,7 +78,7 @@ public class Main {
 
 
         paris.loadTourism();
-//        paris.loadRoads();
+        paris.loadRoads();
 
         return paris;
     }

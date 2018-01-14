@@ -19,7 +19,7 @@ public class UserInterface extends BasicGame {
     public static float xDisplacement = 140.0f;
     public static float yDisplacement = -125.f;
 
-    public static int ACCELERATOR = (30 * 60);
+    public static int ACCELERATOR = (5 * 60);
 
     public static int ZOOM = 5320;
 
