@@ -263,11 +263,11 @@ public class UserInterface extends BasicGame {
             });
         }
 
-//        if (paris.getPlaces() != null) {
-//            paris.getPlaces().forEach((place) -> {
-//                place.draw(graphics, xCorrection, yCorrection);
-//            });
-//        }
+        if (paris.getPlaces() != null) {
+            paris.getPlaces().forEach((place) -> {
+                place.draw(graphics, xCorrection, yCorrection);
+            });
+        }
 
 
         for (Map.Entry<Integer, Station> currentStationEntry : paris.getStations().entrySet()) {
