@@ -8,7 +8,9 @@ Pas sur que ça serve, mais au cas où : "Project Compiler Output" doit être "r
 <br>
 Onglet **Libraries** (à Gauche)<br>
 La croix verte > Java<br>
-Tu selectionne le dossier lib/ qui est dans le dossier du projet<br>
+Tu selectionne le dossier libs/ qui est dans le dossier du projet<br>
+La croix verte > Java<br>
+Tu selectionne le dossier slick/libs/ qui est dans le dossier du projet<br>
 Ok ok ok ok ok ok <br>
 <br>
 ###**Retours sur le code**
